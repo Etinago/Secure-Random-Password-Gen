@@ -13,8 +13,9 @@ N/A
 ![Alt text](assets/web-capture.png)
 ## Links 
 
+Git Hub: https://github.com/Etinago/Secure-Random-Password-Gen
 
-git commit -m "updated read me"
+Deployed Page: https://etinago.github.io/Secure-Random-Password-Gen/
 
 ## Usage 
 
