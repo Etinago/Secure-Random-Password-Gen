@@ -58,6 +58,10 @@ var lowerCasedCharacters = [
   'z'
 ];
 
+// declare the password length 
+
+var passwordLength = 12; 
+
 // Array of uppercase characters to be included in password
 var upperCasedCharacters = [
   'A',
@@ -94,13 +98,23 @@ function getPasswordOptions() {
 }
 
 // Function for getting a random element from an array
-function getRandom(arr) {
+//function getRandom(arr) {
 
-}
+//}
+
+allChars = upperCasedCharacters + lowerCasedCharacters + numericCharacters + specialCharacters;
 
 // Function to generate password with user input
 function generatePassword() {
+  let password = "";
+  password += upperCasedCharacters[Math.floor(Math.random() * upperCasedCharacters.length)];
+  password += lowerCasedCharacters[Math.floor(Math.random() * lowerCasedCharacters.length)];
+  password += numericCharacters[Math.floor(Math.random() * numericCharacters.length)];
 
+  while(length > password.length){
+    password =+ allChars[Math.floor(Math.random() * allChars.length)]
+  }
+  console.log(password)
 }
 
 // Get references to the #generate element
